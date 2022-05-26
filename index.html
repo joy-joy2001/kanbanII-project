@@ -8,7 +8,7 @@
     <title>CARPE kanban</title>
 </head>
 <body>
-    <header>
+    <header id="main-header">
         <div id="logo-header">
             <img id="logo" src="./assets/img/infinity-logo.png" alt="infinity-logo">
             <div id="username-display">
@@ -24,7 +24,46 @@
         </nav>
     </header>
     <main>
-        <section id="side-board"></section>
+        <section id="side-board">
+            <header id="kb-board-header">
+                <h1>the<br>carpe<br>project</h1>
+                <p>just do it.</p>
+            </header>
+            <section id="date-time-section">
+                <div id="current-day">
+                    <h3 class="date-title">WED</h3>
+                    <p class="date-variable">17</p>
+                </div>
+                <div id="current-time">
+                    <h3 class="date-title">PM</h3>
+                    <p class="date-variable">5:18</p>
+                </div>
+            </section>
+            <section id="quick-stats">
+                <div id="task-total" class="circle-stats">
+                    <img class="statmojis" src="./assets/img/green-checkmark.png" alt="green-checkmark">
+                    <p>40</p>
+                </div>
+                <div id="focus-hours" class="circle-stats">
+                    <img class="statmojis" src="./assets/img/pomodoro.png" alt="brown-clock">
+                    <p>500</p>
+                </div>
+                <div id="star-points" class="circle-stats">
+                    <img class="statmojis" src="./assets/img/star.png" alt="yellow-star">
+                    <p>39</p>
+                </div>
+            </section>
+            <section id="quickstats-subtitles">
+                <p id="tasks-subtitle">Tasks<br>completed</p>
+                <p id="focus-subtitle">Hours<br>focused</p>
+                <p id="star-subtitle">Star<br>points</p>
+            </section>
+            <section id="today-mantra">
+                <h3>MANTRA</h3>
+                <p>“first say to yourself then, do what you have to do”</p>          
+            </section>
+        </section>
+
         <section id="main-board">
             <div id="todo-panel" class="kb-panel"></div>
             <div id="inprogress-panel" class="kb-panel"></div>

@@ -1,10 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 :root{
     --todo-col: rgba(160, 188, 194, 1);
     --progress-col: rgba(255, 234, 181, 1);
     --complete-col: rgba(218, 229, 208, 1);
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
     box-sizing: border-box;
@@ -17,13 +17,19 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-/* HEADER + NAVIGATION SECTION - will move to a separate style sheets */
-header {
+#main-header {
     height: 75px;
     background: #FFF9EA;
     box-shadow: 0px 4px 9px -3px rgba(0, 0, 0, 0.1);
 }
 
+main {
+    margin: 35px 40px;
+    height: 425px;
+    width: 1208px;
+}
+
+/* HEADER + NAVIGATION SECTION - will move to a separate style sheets */
 #logo-header {
     display: flex;
     margin-left: 30px;
@@ -61,21 +67,10 @@ nav a {
     font-size: 15px;
     font-weight: 600;    
 }
-
 /* END OF HEADER + NAVIGATION SECTION - will move to a separate style sheets */
 
-main {
-    margin: 35px 40px;
-    height: 425px;
-    width: 1208px;
-}
 
-#side-board {
-    width: 309px;
-    height: inherit;
-    float: left;
-}
-
+/* MAIN KANBAN BOARD */
 #main-board {
     height: inherit;
     width: 899px;
@@ -86,7 +81,7 @@ main {
 
 .kb-panel {
     width: 280px;
-    height: 425px;
+    height: 450px;
     background: #D9D9D9;
     border-radius: 10px;
 }
@@ -102,3 +97,123 @@ main {
 #complete-panel {
     background-color: var(--complete-col);
 }
+
+/* END OF MAIN KANBAN BOARD */
+
+
+/* SIDE-BOARD DASHBOARD */
+
+#side-board {
+    width: 309px;
+    height: inherit;
+    float: left;
+}
+
+    /* header section */
+#kb-board-header h1{
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 40px;
+    letter-spacing: -0.02em;
+    line-height: 48px;
+}
+
+#kb-board-header p{
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 3px;
+    margin-bottom: 25px;
+}
+
+    /* date-time section */
+#date-time-section {
+    display: flex;
+    text-align: center;
+    gap:40px;
+    margin-bottom: 33px;
+    margin-left: 5px;
+}
+
+.date-title {
+    font-weight: 400;
+    font-size: 15px;
+    margin: 0;
+}
+
+.date-variable{
+    font-weight: 600;
+    font-size: 25px;
+    margin: 0;
+}
+
+#current-day{
+    margin-left: 9px;
+}
+
+    /* quick stats section */
+#quick-stats {
+    display: flex;
+    gap: 30px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.circle-stats {
+    position: relative;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    background: #FFF9EA;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#quickstats-subtitles{
+    display: flex;
+    gap: 40px;
+    width: 215px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 17px;
+    margin-left: 2px;
+}
+
+#quickstats-subtitles p{
+    width: 55px;
+}
+
+.statmojis {
+    position: absolute;
+    left: 20px;
+    top: -7px;
+    width: 15px;
+    height: 15px;
+}
+
+
+    /* today's quote */
+
+#today-mantra {
+    width: 260px;
+    text-align: center;
+    padding-right: 30px;
+}
+#today-mantra p{
+    font-style: italic;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0;
+}
+
+#today-mantra h3{
+    font-weight: 400;
+    font-size: 15px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+/* END OF SIDE-BOARD DASHBOARD */

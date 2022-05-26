@@ -31,6 +31,7 @@
     background: inherit;
     display: flex;
     justify-content: space-between;
+    border-radius: 10px 10px 0 0;
 }
 
 .panel-title {
@@ -71,6 +72,7 @@
     padding-left: 19px;
     position: relative;
     top: 60px;
+    padding-bottom: 1em;
 }
 
 .ticket {

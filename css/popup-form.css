@@ -4,9 +4,17 @@
     --todo-col: rgba(160, 188, 194, 1);
     --progress-col: rgba(255, 234, 181, 1);
     --complete-col: rgba(218, 229, 208, 1);
+    --blue-fade: rgba(160, 188, 194, 0.36);
+    --cream-fade: rgba(254, 244, 220, 1);
+    --green-fade: rgba(218, 229, 208, 0.53);
+}
+
+button, input[type=submit] {
+    cursor: pointer;
 }
 
 #newtask-form {
+    display: none;
     z-index: 3;
     position: fixed;
     width: 250px;
@@ -33,6 +41,28 @@
     line-height: 24px;
     padding-top: 22px;
     padding-left: 24px;
+    float: left;
+}
+
+#exitform-btn {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-radius: 50%;
+    background: var(--cream-fade);
+    top: 10px;
+    right: 10px;
+    font-size: 10px;
+    box-shadow: 1px 2px 1px black;
+}
+
+#exitform-btn:hover {
+    box-shadow: none;
+    background: rgba(255, 255, 255, 0.868);
 }
 
 .form-body {

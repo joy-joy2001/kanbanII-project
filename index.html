@@ -16,12 +16,12 @@
         <form action="" class="">
             <header class="form-header">
                 <h2 class="form-title">NEW TASK</h2>
-                <button>✖</button>
+                <button id="exitform-btn" onclick="closeForm()">✖</button>
             </header>
             <section class="form-body">
                 <textarea class="custom-fields text-field" type="text" name="task-details" placeholder="Task"></textarea>
                 <section class="labelandfield">
-                    <label for="task-duedate">Due Date*</label>
+                    <label for="task-duedate">Due Date</label>
                     <input class="custom-fields date-field" type="date" name="task-duedate" id="" placeholder="Due Date">                    
                 </section>
                 <section class="labelandfield">
@@ -104,7 +104,7 @@
             <div id="todo-panel" class="kb-panel">
                 <header class="panel-header">
                     <h2 class="panel-title">To Do 📌</h2>
-                    <button id="add-ticket">+</button>
+                    <button id="add-ticket-btn" onclick="openForm()">+</button>
                 </header>
                 <section class="ticket-list">
                     <article id="kb01" class="todo-ticket ticket">
@@ -212,9 +212,9 @@
                         <section class="ticket-details">
                             <p>KANB-0021</p>
                             <div class="ticket-btns">
-                                <a href="#">👈 </a>
-                                <a href="#">❌ </a>
-                                <a href="#">👉 </a>
+                                <a href="#">👈&nbsp;</a>
+                                <a href="#">&nbsp❌&nbsp</a>
+                                <a href="#">&nbsp👉 </a>
                             </div>
                         </section>
                     </article>
@@ -384,5 +384,6 @@
             </div>
         </section>
     </main>
+    <script src="./js/popup.js"></script>
 </body>
 </html>

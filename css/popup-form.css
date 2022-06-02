@@ -17,10 +17,10 @@ button, input[type=submit] {
     display: none;
     z-index: 3;
     position: fixed;
-    width: 250px;
-    height: 250px;
-    left: 479px;
-    top: 200px;
+    width: 20vw;
+    height: 40vh;
+    left: 40vw;
+    top: 30vh;
     background: #FEF4DC;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
@@ -78,7 +78,7 @@ button, input[type=submit] {
 
 textarea {
     padding: 10px;
-    height: 50px;
+    height: 10vh;
     width: 100%;
 }
 

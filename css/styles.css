@@ -19,7 +19,7 @@ body {
 
 main {
     margin: auto;
-    padding-top: 3em;
+    padding: 2em 0;
     height: 87vh;
     width: 95vw;
     display: flex;
@@ -38,14 +38,14 @@ main {
     margin: 0;
     text-transform: uppercase;
     font-weight: 900;
-    font-size: 40px;
+    font-size: 4vw;
     letter-spacing: -0.02em;
-    line-height: 48px;
+    line-height: 4vw;
 }
 
 #kb-board-header p{
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1.5vw;
     margin-top: 3px;
     margin-bottom: 25px;
 }
@@ -121,14 +121,13 @@ main {
     /* today's quote */
 
 #today-mantra {
-    width: 260px;
     text-align: center;
     padding-right: 30px;
 }
 #today-mantra p{
     font-style: italic;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1.1vw;
     margin: 0;
 }
 

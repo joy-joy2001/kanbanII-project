@@ -11,24 +11,26 @@
 }
 
 body {
-    min-height: 100%;
+    height: 100vh;
     background: #FEF4DC;
     margin: 0;
     font-family: 'Inter', sans-serif;
 }
 
 main {
-    margin: 35px 40px;
-    height: 425px;
-    width: 1208px;
+    margin: auto;
+    padding-top: 3em;
+    height: 87vh;
+    width: 95vw;
+    display: flex;
+    justify-content: space-between;
 }
 
 /* SIDE-BOARD DASHBOARD */
 
 #side-board {
-    width: 309px;
-    height: inherit;
-    float: left;
+    width: 25%;
+    height: 100%;
 }
 
     /* header section */

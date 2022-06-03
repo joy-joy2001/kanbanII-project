@@ -7,7 +7,9 @@
 }
 
 #main-header {
-    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    height: 13vh;
     background: #FFF9EA;
     box-shadow: 0px 4px 9px -3px rgba(0, 0, 0, 0.1);
 }
@@ -16,14 +18,18 @@
     display: flex;
     margin-left: 30px;
     gap: .5em;
-    font-size: 15px;
+    font-size: 1.2em;
     width: fit-content;
     height: fit-content;
-    float: left;
+}
+
+#logo-header a {
+    align-self: center;
 }
 
 #logo {
     height: 70px;
+    align-self: center;
 }
 
 #username-display {
@@ -32,11 +38,10 @@
 }
 
 nav {
-    width: 200px;
+    width: 15vw;
     text-transform: uppercase;
     display: flex;
     justify-content: space-between;
-    float: right;
     height: 70px;
     align-items: flex-end;
     margin-right: 2em;
@@ -46,6 +51,6 @@ nav {
 nav a {
     text-decoration: none;
     color: black;
-    font-size: 15px;
-    font-weight: 600;    
+    font-size: 1em;
+    font-weight: 700;    
 }

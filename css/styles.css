@@ -19,8 +19,8 @@ body {
 
 main {
     margin: auto;
-    padding: 2em 0;
-    height: 87vh;
+    padding-top: 2em;
+    height: 92vh;
     width: 95vw;
     display: flex;
     justify-content: space-between;

@@ -9,14 +9,14 @@
 #main-header {
     display: flex;
     justify-content: space-between;
-    height: 13vh;
+    height: 8vh;
     background: #FFF9EA;
     box-shadow: 0px 4px 9px -3px rgba(0, 0, 0, 0.1);
+    padding: 0 32px;
 }
 
 #logo-header {
     display: flex;
-    margin-left: 30px;
     gap: .5em;
     font-size: 1em;
     width: fit-content;
@@ -28,7 +28,7 @@
 }
 
 #logo {
-    height: 70px;
+    height: 60px;
     align-self: center;
 }
 
@@ -42,10 +42,10 @@ nav {
     text-transform: uppercase;
     display: flex;
     justify-content: space-between;
-    height: 70px;
-    align-items: flex-end;
-    margin-right: 2em;
-    margin-top: -1em;
+    /* height: 70px; */
+    align-items: center;
+    /* margin-right: 2em; */
+    /* margin-top: -1em; */
 }
 
 nav a {

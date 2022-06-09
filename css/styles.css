@@ -50,77 +50,10 @@ main {
     margin-bottom: 25px;
 }
 
-    /* date-time section */
-#date-time-section {
-    display: flex;
-    text-align: center;
-    gap:40px;
-    margin-bottom: 33px;
-    margin-left: 5px;
-}
 
-.date-title {
-    font-weight: 400;
-    font-size: 15px;
-    margin: 0;
-}
-
-.date-variable{
-    font-weight: 600;
-    font-size: 25px;
-    margin: 0;
-}
-
-#current-day{
-    margin-left: 9px;
-}
-
-    /* quick stats section */
-#quick-stats {
-    display: flex;
-    gap: 30px;
-    text-align: center;
-    font-weight: 700;
-    font-size: 18px;
-}
-
-.circle-stats {
-    position: relative;
-    border-radius: 50%;
-    width: 55px;
-    height: 55px;
-    background: #FFF9EA;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-#quickstats-subtitles{
-    display: flex;
-    gap: 40px;
-    width: 215px;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 12px;
-    text-align: center;
-    font-style: italic;
-    margin-bottom: 17px;
-    margin-left: 2px;
-}
-
-#quickstats-subtitles p{
-    width: 55px;
-}
-
-.statmojis {
-    position: absolute;
-    left: 20px;
-    top: -7px;
-    width: 15px;
-    height: 15px;
-}
 
     /* today's quote */
-
-#today-mantra {
+/* #today-mantra {
     text-align: center;
     padding-right: 30px;
 }
@@ -136,6 +69,30 @@ main {
     font-size: 15px;
     margin: 0;
     margin-bottom: 5px;
-}
+} */
 
 /* END OF SIDE-BOARD DASHBOARD */
+
+#monthly-metric {
+    width: 270px;
+    height: 105px;
+    border: 1px solid grey;
+}
+
+#metric-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:16px;
+}
+
+#metric-header h1, #metric-header h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.57);
+    font-weight: 700;
+}
+
+#metric-header h2 {
+    font-size: 10px;
+}

@@ -28,15 +28,18 @@
     justify-content: space-between;
 }
 
-.variable-hero {
-    padding-left: 5%;
-}
+
 
 .variable-hero, #carpediem-hero{
     width: fit-content;
     display: flex;
     flex-direction: column;
     height: 50%;
+}
+
+.variable-hero {
+    margin-left: 5%;
+    width: 70%;
 }
 
 #about-hero h3 {
@@ -56,6 +59,8 @@
     object-position: -34px -97px;
 }
 
+/* LOGIN */
+
 .carpehome-btns {
     display: flex;
     justify-content: space-between;
@@ -64,7 +69,7 @@
 .home-btn {
     font-weight: 700;
     font-size: 1em;
-    padding: 0.2em 0.7em;
+    padding: 0.5em 1em;
     border: none;
     background: none;
     cursor: pointer;

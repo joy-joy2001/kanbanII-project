@@ -30,6 +30,7 @@ body {
 /* SIDE-BOARD DASHBOARD */
 
 #side-board {
+    position: relative;
     width: 25%;
     height: 100%;
 }

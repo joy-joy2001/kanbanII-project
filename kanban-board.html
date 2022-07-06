@@ -12,36 +12,29 @@
     <title>CARPE DIEM · KanBan</title>
 </head>
 <body>
-    <div class="popup-forms" id="newtask-form">
-        <form action="" class="">
-            <header class="form-header">
-                <h2 class="form-title">NEW TASK</h2>
-                <button id="exitform-btn" onclick="closeForm()">✖</button>
-            </header>
-            <section class="form-body">
-                <textarea class="custom-fields text-field" type="text" name="task-details" placeholder="Task"></textarea>
-                <section class="labelandfield">
-                    <label for="task-duedate">Due Date</label>
-                    <input class="custom-fields date-field" type="date" name="task-duedate" id="" placeholder="Due Date">                    
-                </section>
-                <section class="labelandfield">
-                    <label for="task-priority">Priority</label>
-                    <select class="custom-fields select-field"  name="task-priority" id="">
-                        <option value=""></option>
-                        <option value="high">🔴 - High</option>
-                        <option value="medium">🟠 - Medium</option>
-                        <option value="low">🟢 - Low</option>
-                    </select>
-                </section>
-                <section class="horizontal-btns">
-                    <!-- <input class="form-btn" type="submit" value="CANCEL">   -->
-                    <input class="form-btn" type="submit" value="ADD TO BOARD">
-                </section>
-              
+    <section id="modal">
+        <form id="newtask-form" action="">
+            <div class="form-header">
+                <h2>New Task</h2>
+                <button id="closeform" onclick="hidePopup()">X</button>                        
+            </div>
+            <textarea class="custom-fields text-field" type="text" name="task-details" placeholder="Task" rows="3"></textarea>
+            <section class="labelandfield">
+                <label for="task-duedate">Due Date</label>
+                <input class="custom-fields date-field" type="date" name="task-duedate" id="" placeholder="Due Date">                    
             </section>
-
+            <section class="labelandfield">
+                <label for="task-priority">Priority</label>
+                <select class="custom-fields select-field"  name="task-priority" id="">
+                    <option value=""></option>
+                    <option value="high">🔴 - High</option>
+                    <option value="medium">🟠 - Medium</option>
+                    <option value="low">🟢 - Low</option>
+                </select>
+            </section>
+            <input type="submit" value="ADD TASK">
         </form>
-    </div>
+    </section>
     <header id="main-header">
         <div id="logo-header">
             <a href="#"><img id="logo" src="./assets/img/infinity-logo.png" alt="infinity-logo"></a>
